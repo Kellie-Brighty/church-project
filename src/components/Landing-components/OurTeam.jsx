@@ -17,7 +17,7 @@ const OurTeam = () => {
       </p>
 
       <div
-        className={`mt-[32px] space-y-[32px] lg:flex lg:items-center lg:space-x-[57px]`}
+        className={`mt-[32px] space-y-[32px] lg:flex lg:items-center lg:space-x-[57px] lg:space-y-0`}
       >
         <ImageComponent name={"Debbie Bodunde"} image={Debbie} />
         <ImageComponent name={"Muyiwa Ige"} image={Muyiwa} />
