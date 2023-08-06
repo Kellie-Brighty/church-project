@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={`mt-[52px] lg:mt-0`}>
+        <div className={`mt-[52px] lg:mt-0 lg:ml-[100px] space-y-[32px]`}>
           <p>chrsitforallsoulsministryuk.org</p>
           <p className={`mt-[10px]`}>+447534208883</p>
           <p className={`w-[250px] mt-[10px]`}>
@@ -29,13 +29,13 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className={`mt-[52px] space-y-2 lg:mt-0`}>
+        <div className={`mt-[52px] space-y-[32px] lg:mt-0`}>
           <p className={`cursor-pointer`}>About Us</p>
           <p className={`cursor-pointer`}>Our Teams</p>
           <p className={`cursor-pointer`}>Board of Trusties</p>
         </div>
 
-        <div className={`hidden lg:inline-block lg:space-y-2`}>
+        <div className={`hidden lg:inline-block lg:space-y-[32px]`}>
           <p className={`cursor-pointer`}>Resources</p>
           <p className={`cursor-pointer`}>Sermon</p>
           <p className={`cursor-pointer`}>Blog</p>
@@ -44,10 +44,7 @@ const Footer = () => {
 
       <div className={`mt-[40px] flex items-center space-x-3 lg:mt-[268px]`}>
         <p>&copy;</p>
-        <p className={`w-[310px] lg:w-full`}>
-          2023 All Rights Reserved - Jesus Christ The Son of God for all Souls
-          Ministry Worldwide{" "}
-        </p>
+        <p className={`w-[310px] lg:w-full`}>Jesus Christ For All Souls 2023</p>
       </div>
     </div>
   );

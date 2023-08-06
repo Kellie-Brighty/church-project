@@ -12,7 +12,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div className={`mt-[56px] px-[16px] lg:px-[104px] pb-[20px]`}>
+    <div className={`mt-[135px] px-[16px] lg:px-[104px] pb-[20px]`}>
       <p className={`font-outfit text-[#1b0b0b] text-[12px] lg:text-[24px]`}>
         ABOUT US
       </p>
@@ -67,6 +67,12 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+
+      <p
+        className={`text-[#EFEFEF] text-[12px] lg:text-[38px] w-full font-bold`}
+      >
+        Jesus Christ the Son of God for all Souls Ministries Worldwide{" "}
+      </p>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Hero = () => {
       style={{ backgroundImage: "url('/hero-bg.svg')" }}
     >
       <Header />
-      <div className={`pt-[125px] px-[16px] lg:px-[104px]`}>
+      <div className={`pt-[125px] px-[16px] lg:px-[104px] lg:pt-[40px]`}>
         <p className={`font-outfit text-[#fff]`}>Welcome to Church</p>
         <p
           className={`text-[32px] font-bold text-[#fff] mt-[13px] font-outfit 
