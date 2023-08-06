@@ -16,7 +16,7 @@ const ContactUs = () => {
             Send Us a Message{" "}
           </p>
           <p
-            className={`text-center mt-[10px] font-outfit text-[14px] lg:mt-[96px] lg:text-[20px]`}
+            className={`text-center mt-[10px] font-outfit text-[14px] lg:mt-[15px] lg:text-[20px]`}
           >
             Message Us and you’ll get a response shortly{" "}
           </p>

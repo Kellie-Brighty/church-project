@@ -12,7 +12,7 @@ const ExperienceGod = () => {
 
   return (
     <div
-      className={`font-outfit p-[16px] lg:flex lg:justify-evenly lg:items-center`}
+      className={`font-outfit p-[16px] lg:flex lg:justify-between lg:items-center lg:px-[104px]`}
     >
       <div>
         <p className={`text-[12px] lg:text-[20px]`}>EXPERIENCE GOD </p>
@@ -29,7 +29,7 @@ const ExperienceGod = () => {
       </div>
 
       <div className={`flex justify-center`}>
-        <img src={Image} alt="" className={`object-contain`} />
+        <img src={Image} alt="" className={`object-contain w-[400px]`} />
       </div>
     </div>
   );

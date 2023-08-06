@@ -14,13 +14,13 @@ const AboutUs = () => {
           The Story So Far
         </p>
 
-        <div className={`mt-[29px]`}>
+        <div className={`mt-[29px] lg:mt-[126px]`}>
           <div className={`lg:flex lg:space-x-[39px]`}>
             <div className={`flex justify-center `}>
               <img
                 src={AboutImage}
                 alt=""
-                className={`w-[380px] lg:w-[2500px]`}
+                className={`w-[380px] lg:w-[2700px] object-contain`}
               />
             </div>
             <div className={`mt-[32px]`}>

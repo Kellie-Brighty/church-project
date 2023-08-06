@@ -9,6 +9,8 @@ const Header = ({ type }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
 
+  console.log(window.location.pathname);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -63,7 +65,7 @@ const Header = ({ type }) => {
           >
             <p
               className={`block px-4 py-2 font-lato cursor-pointer ${
-                scrolling ? "text-white" : "text-[#000]"
+                scrolling ? "text-black" : "text-[#000]"
               }`}
               onClick={() => {
                 navigate("/About-us");
@@ -74,7 +76,7 @@ const Header = ({ type }) => {
             </p>
             <p
               className={`block px-4 py-2 font-lato cursor-pointer ${
-                scrolling ? "text-white" : "text-[#000]"
+                scrolling ? "text-black" : "text-[#000]"
               }`}
               onClick={() => {
                 navigate("/Contact-us");
@@ -85,7 +87,7 @@ const Header = ({ type }) => {
             </p>
             <p
               className={`block px-4 py-2 font-lato cursor-pointer ${
-                scrolling ? "text-white" : "text-[#000]"
+                scrolling ? "text-black" : "text-[#000]"
               }`}
               onClick={() => {
                 navigate("/Testimonies");
@@ -96,7 +98,7 @@ const Header = ({ type }) => {
             </p>
             <p
               className={`block px-4 py-2 font-lato cursor-pointer ${
-                scrolling ? "text-white" : "text-[#000]"
+                scrolling ? "text-black" : "text-[#000]"
               }`}
             >
               Media
@@ -107,7 +109,11 @@ const Header = ({ type }) => {
         <div className="hidden lg:flex items-center space-x-[60px]">
           <p
             className={`font-lato cursor-pointer ${
-              scrolling ? "text-white" : "text-[#000]"
+              scrolling
+                ? "text-white"
+                : window.location.pathname === "/"
+                ? "text-[#fff]"
+                : "text-[#000]"
             }`}
             onClick={() => navigate("/About-us")}
           >
@@ -115,7 +121,11 @@ const Header = ({ type }) => {
           </p>
           <p
             className={`font-lato cursor-pointer ${
-              scrolling ? "text-white" : "text-[#000]"
+              scrolling
+                ? "text-white"
+                : window.location.pathname === "/"
+                ? "text-[#fff]"
+                : "text-[#000]"
             }`}
             onClick={() => navigate("/Contact-us")}
           >
@@ -123,7 +133,11 @@ const Header = ({ type }) => {
           </p>
           <p
             className={`font-lato cursor-pointer ${
-              scrolling ? "text-white" : "text-[#000]"
+              scrolling
+                ? "text-white"
+                : window.location.pathname === "/"
+                ? "text-[#fff]"
+                : "text-[#000]"
             }`}
             onClick={() => navigate("/Testimonies")}
           >
@@ -131,7 +145,11 @@ const Header = ({ type }) => {
           </p>
           <p
             className={`font-lato cursor-pointer ${
-              scrolling ? "text-white" : "text-[#000]"
+              scrolling
+                ? "text-white"
+                : window.location.pathname === "/"
+                ? "text-[#fff]"
+                : "text-[#000]"
             }`}
           >
             Media
