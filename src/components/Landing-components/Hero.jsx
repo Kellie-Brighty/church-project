@@ -2,8 +2,13 @@ import React from "react";
 // import HeroBg from "../../assets/hero-bg.svg";
 import Header from "../General-components/Header";
 import { Button } from "../General-components/Button";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const goToContact = () => {
+    navigate("/Contact-us");
+  };
   return (
     <div
       className={`h-[100vh] lg:h-[120vh] bg-cover bg-no-repeat bg-center lg:pt-[125px]`}
@@ -24,7 +29,7 @@ const Hero = () => {
         </p>
 
         <div className={`mt-[36px]`}>
-          <Button text={"Join Us"} bg="#fff" />
+          <Button text={"Join Us"} bg="#fff" action={goToContact} />
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../../assets/church-logo.svg";
 import MenuIcon from "../../assets/menu-icon.svg";
+import BlackMenu from "../../assets/black-menu.png";
 
-const Header = () => {
+const Header = ({ type }) => {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -33,22 +34,48 @@ const Header = () => {
       </div>
 
       <div>
-        <img
-          src={MenuIcon}
-          alt="menu-icon"
-          className={`h-[24px] w-[24px] lg:hidden`}
-        />
-        <div className={`hidden lg:flex items-center space-x-[60px]`}>
-          <p className={`font-lato text-${scrolling ? "white" : "gray-900"}`}>
+        {type === "black" ? (
+          <img
+            src={BlackMenu}
+            alt="menu-icon"
+            className={`h-[24px] w-[24px] lg:hidden`}
+          />
+        ) : (
+          <img
+            src={MenuIcon}
+            alt="menu-icon"
+            className={`h-[24px] w-[24px] lg:hidden`}
+          />
+        )}
+        <div
+          className={`hidden lg:flex items-center space-x-[60px] lg:text-[#fff]`}
+        >
+          <p
+            className={`font-lato  cursor-pointer ${
+              scrolling ? "text-white" : "text-[#000]"
+            }`}
+          >
             Who we are
           </p>
-          <p className={`font-lato text-${scrolling ? "white" : "gray-900"}`}>
+          <p
+            className={`font-lato  cursor-pointer ${
+              scrolling ? "text-white" : "text-[#000]"
+            }`}
+          >
             Contact us
           </p>
-          <p className={`font-lato text-${scrolling ? "white" : "gray-900"}`}>
+          <p
+            className={`font-lato  cursor-pointer ${
+              scrolling ? "text-white" : "text-[#000]"
+            }`}
+          >
             Testimonies
           </p>
-          <p className={`font-lato text-${scrolling ? "white" : "gray-900"}`}>
+          <p
+            className={`font-lato  cursor-pointer ${
+              scrolling ? "text-white" : "text-[#000]"
+            }`}
+          >
             Media
           </p>
         </div>

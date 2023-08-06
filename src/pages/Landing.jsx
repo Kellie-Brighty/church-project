@@ -8,7 +8,7 @@ import Footer from "../components/General-components/Footer";
 
 const Landing = () => {
   return (
-    <div>
+    <div className={`bg-[#F9F9F9]`}>
       <Hero />
       <AboutSection />
       <OurServices />
