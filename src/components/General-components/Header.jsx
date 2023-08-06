@@ -40,7 +40,7 @@ const Header = ({ type }) => {
         <img src={Logo} alt="church-logo" className={`w-[60px] h-[60px]`} />
       </div>
 
-      <div className="relative">
+      <div className="relative lg:flex items-center space-x-[60px] lg:text-[#fff]">
         {type === "black" ? (
           <img
             src={BlackMenu}
@@ -56,6 +56,7 @@ const Header = ({ type }) => {
             onClick={toggleMenu}
           />
         )}
+
         {isMenuOpen && (
           <div
             className={`absolute right-0 mt-2 py-2 bg-white rounded shadow-lg z-10 lg:hidden`}
@@ -65,7 +66,7 @@ const Header = ({ type }) => {
                 scrolling ? "text-white" : "text-[#000]"
               }`}
               onClick={() => {
-                navigate("/About-us");
+                navigate("/");
                 toggleMenu(); // Close menu dropdown after clicking a link
               }}
             >
@@ -102,6 +103,40 @@ const Header = ({ type }) => {
             </p>
           </div>
         )}
+
+        <div className="hidden lg:flex items-center space-x-[60px]">
+          <p
+            className={`font-lato cursor-pointer ${
+              scrolling ? "text-white" : "text-[#000]"
+            }`}
+            onClick={() => navigate("/About-us")}
+          >
+            Who we are
+          </p>
+          <p
+            className={`font-lato cursor-pointer ${
+              scrolling ? "text-white" : "text-[#000]"
+            }`}
+            onClick={() => navigate("/Contact-us")}
+          >
+            Contact us
+          </p>
+          <p
+            className={`font-lato cursor-pointer ${
+              scrolling ? "text-white" : "text-[#000]"
+            }`}
+            onClick={() => navigate("/Testimonies")}
+          >
+            Testimonies
+          </p>
+          <p
+            className={`font-lato cursor-pointer ${
+              scrolling ? "text-white" : "text-[#000]"
+            }`}
+          >
+            Media
+          </p>
+        </div>
       </div>
     </div>
   );
