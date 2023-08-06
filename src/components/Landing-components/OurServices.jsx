@@ -5,8 +5,14 @@ import ServiceThree from "../../assets/serviceThree.png";
 import Time from "../../assets/time.svg";
 import Location from "../../assets/location.svg";
 import { Button } from "../General-components/Button";
+import { useNavigate } from "react-router-dom";
 
 const OurServices = () => {
+  const navigate = useNavigate();
+  const goToContact = () => {
+    navigate("/Contact-us");
+  };
+
   return (
     <div
       className={`px-[16px] py-[20px] mt-[56px] lg:px-[104px] lg:mt-[200px]`}
@@ -77,7 +83,11 @@ const OurServices = () => {
             </div>
           </div>
           <div className={`mt-[32px]`}>
-            <Button text={"Contact Us"} type={"outlined"} />
+            <Button
+              text={"Contact Us"}
+              type={"outlined"}
+              action={goToContact}
+            />
           </div>
         </div>
       </div>

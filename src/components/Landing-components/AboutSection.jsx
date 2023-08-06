@@ -3,8 +3,14 @@ import ImageOne from "../../assets/imgOne.png";
 import ImageTwo from "../../assets/imgTwo.png";
 import ImageThree from "../../assets/imgThree.png";
 import { BlackButton } from "../General-components/Button";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+  const goToAbout = () => {
+    navigate("/About-us");
+  };
+
   return (
     <div className={`mt-[56px] px-[16px] lg:px-[104px] pb-[20px]`}>
       <p className={`font-outfit text-[#1b0b0b] text-[12px] lg:text-[24px]`}>
@@ -53,7 +59,11 @@ const AboutSection = () => {
           </p>
 
           <div className={`mt-[32px]`}>
-            <BlackButton text={"More About Us"} />
+            <BlackButton
+              text={"More About Us"}
+              icon={true}
+              action={goToAbout}
+            />
           </div>
         </div>
       </div>
