@@ -66,7 +66,7 @@ const Header = ({ type }) => {
                 scrolling ? "text-white" : "text-[#000]"
               }`}
               onClick={() => {
-                navigate("/");
+                navigate("/About-us");
                 toggleMenu(); // Close menu dropdown after clicking a link
               }}
             >
